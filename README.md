@@ -11,6 +11,8 @@ Kod öğretici/deneysel amaçlıdır; şimdilik başarı seviyesi sınırlıdır
 > ⚠️ **Not:** Depo boyutu/dağıtım kısıtları nedeniyle uzun eğitim (çok episode) sonucu oluşan büyük model dosyaları repoda yer almıyor. Checkpoint mantığı mevcut; kendi eğitimlerinizle devam edebilirsiniz.
 
 ---
+![pong_with_ai.gif](pong_with_ai.gif)
+---
 
 ## ✨ Özellikler
 
@@ -131,4 +133,3 @@ Bu çalışma, öğrenme/deney amaçlı minimal bir DQN iskeleti sunmayı hedefl
 
 
 ---
-![pong_with_ai.gif](pong_with_ai.gif)
