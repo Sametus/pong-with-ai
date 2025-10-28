@@ -10,7 +10,7 @@ from tensorflow.keras.layers import LeakyReLU # type: ignore
 # windows size
 WIDTH = 600
 HEIGHT = 600
-FPS = 20
+FPS = 60
 
 # colors RGB
 WHITE = (255,255,255)
