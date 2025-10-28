@@ -405,7 +405,7 @@ if __name__ == "__main__":
         print("[RESUME] Checkpoint bulunamadı; 1. bölümden başlanıyor.")
         start_ep = 1
 
-    EPISODES = 150
+    EPISODES = 1000
 
     for t in range(start_ep, EPISODES + 1):
         print(f"Episode: {t}")
