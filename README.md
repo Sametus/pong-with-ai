@@ -50,11 +50,7 @@ pip install "tensorflow==2.12.*" pygame==2.1.2 numpy==1.24.*
 ---
 
 ## 🎯 Çalıştırma
-Proje tek dosyadır (örn. main.py). Çalıştırın:
-
-```bash
-python main.py
-```
+Proje iki dosyadır. train_model.py (model eğitimi) ve play-model.py(eğitilen modeller ile oynama).
 
 - `models/` dizininde önceden checkpoint varsa otomatik kaldığı yerden devam eder
 - Yoksa 1. bölümden başlar
@@ -76,11 +72,6 @@ model = load_model("models/agent1_ep150.keras",
 
 ---
 
-## 🎮 Oynatma (Play) Modu
-Eğitim yerine sadece oynamak istiyorsanız, eğitilmiş modelleri yükleyip aksiyonları `argmax(Q)` ile seçen kısa bir döngü ekleyebilirsiniz.
-
-> ⚠️ **Önemli:** `getCoordinate()` eğitimle aynı olmalı (bu projede `(rect.x, rect.y)`).
-
 > 💡 **İpucu:** Eğitimde kullandığınız FPS ile Play FPS aynı olsun; aksi halde dinamikler değişir.
 
 ---
@@ -101,7 +92,6 @@ Eğitim yerine sadece oynamak istiyorsanız, eğitilmiş modelleri yükleyip aks
 ## ⚠️ Bilinen Sınırlamalar
 - 🎯 Kod bilinçli olarak basit tutuldu; "gerçek Pong" fiziği yok
 - 📈 Başarı seviyesi şu an yeterli değil; daha uzun eğitim ve/veya ödül/mimari iyileştirmeleri gerekiyor
-- 💾 Uzun eğitim sonucu oluşan büyük modeller repoya dâhil edilmedi (dosya boyutu ve kaynak kısıtları)
 
 ---
 
